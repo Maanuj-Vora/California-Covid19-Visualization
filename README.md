@@ -1,3 +1,3 @@
 # Covid19 Visualizations
  
-California County Covid19 Case Visualization script.
+Covid19 Visual Charts by County in California
