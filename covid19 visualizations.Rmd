@@ -44,6 +44,7 @@ plot_graph <- function(data_set, x_axis_data, y_axis_data, title, x_label, y_lab
       labs(title = title,
            x = x_label, y = y_label)
   write_jpg(file_name = file_name, data = graph)
+  write_png(file_name = file_name, data = graph)
 }
 ```
 
