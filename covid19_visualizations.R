@@ -1,3 +1,5 @@
+install.packages('https://cran.r-project.org/src/contrib/Archive/hrbrthemes/hrbrthemes_0.1.0.tar.gz', type='source', repos=NULL)
+
 library(ggplot2)
 library(hrbrthemes)
 
