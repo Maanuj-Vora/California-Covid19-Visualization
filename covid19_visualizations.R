@@ -1,9 +1,4 @@
-install.packages("tidyverse")
-install.packages("hrbrthemes")
-
-
 library(ggplot2)
-library(hrbrthemes)
 
 fileUrl <- "https://data.chhs.ca.gov/dataset/f333528b-4d38-4814-bebb-12db1f10f535/resource/046cdd2b-31e5-4d34-9ed3-b48cdbc4be7a/download/covid19cases_test.csv"
 covidData <- read.csv(fileUrl, header=TRUE, sep=",")
@@ -29,7 +24,7 @@ write_jpg <- function(file_name, data) {
 
 plot_graph <- function(data_set, x_axis_data, y_axis_data, title, x_label, y_label, file_name) {
   graph <- ggplot(data = data_set, aes_string(x = x_axis_data, y = y_axis_data)) +
-    geom_line() + theme_ipsum() +
+    geom_line() +
     labs(title = title,
          x = x_label, y = y_label)
   write_jpg(file_name = file_name, data = graph)

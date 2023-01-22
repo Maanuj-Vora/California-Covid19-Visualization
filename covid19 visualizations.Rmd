@@ -4,7 +4,6 @@ title: "Covid-19 Data Visualizations"
 
 ```{r}
 library(ggplot2)
-library(hrbrthemes)
 ```
 
 ```{r}
@@ -40,7 +39,7 @@ write_jpg <- function(file_name, data) {
 
 plot_graph <- function(data_set, x_axis_data, y_axis_data, title, x_label, y_label, file_name) {
   graph <- ggplot(data = data_set, aes_string(x = x_axis_data, y = y_axis_data)) +
-      geom_line() + theme_ipsum() +
+      geom_line() +
       labs(title = title,
            x = x_label, y = y_label)
   write_jpg(file_name = file_name, data = graph)
