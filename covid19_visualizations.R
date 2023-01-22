@@ -1,4 +1,6 @@
-install.packages("hrbrthemes", repos = c("https://cinc.rud.is", "https://cloud.r-project.org/"))
+install.packages("tidyverse")
+install.packages("hrbrthemes")
+
 
 library(ggplot2)
 library(hrbrthemes)

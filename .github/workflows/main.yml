@@ -16,10 +16,10 @@ jobs:
           r-version: ${{ matrix.r-version }}
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-      - name: Install Required Packages
-        run: Rscript -e 'install.packages(c("tidyverse","ggplot2", "hrbrthemes"))'
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+#      - name: Install Required Packages
+#        run: Rscript -e 'install.packages(c("tidyverse","ggplot2", "hrbrthemes"))'
+#        env:
+#          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       - name: Run it
         run: Rscript covid19_visualizations.R
         env:
