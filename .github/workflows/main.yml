@@ -10,10 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: r-lib/actions/setup-r@master
+      - uses: r-lib/actions/setup-r@v3
       - name: Install Required Packages
-        run: |
-          R -e 'install.packages("ggplot2")'
+        run: R -e 'install.packages("ggplot2")'
       - name: Run it
         run: Rscript covid19_visualizations.R
         env:
