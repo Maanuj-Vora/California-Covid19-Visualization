@@ -17,7 +17,7 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       - name: Install Required Packages
-        run: Rscript -e 'install.packages(c("ggplot2")'
+        run: Rscript -e 'install.packages(c("ggplot2"))'
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       - name: Run it
