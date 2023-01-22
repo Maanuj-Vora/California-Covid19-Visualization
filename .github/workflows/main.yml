@@ -12,9 +12,8 @@ jobs:
       - uses: actions/checkout@master
       - uses: r-lib/actions/setup-r@master
       - name: Install Required Packages
-        - name: Install packages
-          run: |
-            R -e 'install.packages("ggplot2")'
+        run: |
+          R -e 'install.packages("ggplot2")'
       - name: Run it
         run: Rscript covid19_visualizations.R
         env:
